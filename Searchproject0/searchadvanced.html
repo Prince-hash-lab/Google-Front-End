@@ -4,18 +4,18 @@
 <head>
 	<title> GOOGLE </title>
 	<meta charset="utf-8">
+	<link rel="icon" href="assets/image/other.png" sizes="12x12" type="image/png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="assets/image/favicon.png" sizes="12x12" type="image/png">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="container-advance">
-		<img src="assets/image/logo.png">
+		<img src="assets/image/goglelogo.png">
 		<ul>
-			<li><a href="searchimage.html">IMAGES</a></li>
-			<li><a href="index.html">GOOGLE SEARCH</a></li>
-		</ul>
+			<li><a href="searchimage.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">IMAGES SEARCH</a></li>
+			<li><a href="index.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">GOOGLE SEARCH</a></li>
+		</ul> 
 	</div>
 	<div class="extra">ADVANCED SEARCH</div>
 	<hr>
@@ -25,23 +25,25 @@
 				<tbody>
 					<form action="https://google.com/search" method="GET">
 					<tr>
-						<td class="labels">Words which you want to search </td>
+						<td class="otherlabel">all these words </td>
 						<td class="inputs"><input type="text" name="q" autofocus="autofocus"></td>
 					</tr>
 					<tr>
-						<td class="labels"><label for="exact">the exact phase related :  </label></td>
+						<td class="otherlabel"><label for="exact">the exact phase or word  :  </label></td>
 						<td class="inputs"><input type="text" name="as_epq" autocomplete="off" autofocus></td>
 					</tr>
 					<tr>
-						<td class="labels"><label for="any">any of the words:</label></td>
+						<td class="otherlabel"><label for="any">any of these words:</label></td>
 						<td class="inputs"><input type="text" name="as_oq" autocomplete="off" autofocus></td>
 					</tr>
 					<tr>
-						<td class="labels"><label for="none">none of the words:</label></td>
-						<td class="inputs"><input type="text" name="as_eq" autocomplete="off" autofocus></td>
+						<td class="otherlabel">
+						<label for="none">none of these words:</label></td>
+						<td class="inputs">
+						<input type="text" name="as_eq" autocomplete="off" autofocus></td>
 					</tr>
 					<tr>
-						<td colspan="2" align="right"><button type="submit">Advanced Search</button></td>
+						<td colspan="2" align="center"><button type="submit">Advanced Search</button></td>
 					</form>
 				</tbody>
 			</table>
